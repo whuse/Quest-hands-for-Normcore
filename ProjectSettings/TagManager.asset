@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - spawn
+  - VR Rig
+  - holder
   layers:
   - Default
   - TransparentFX

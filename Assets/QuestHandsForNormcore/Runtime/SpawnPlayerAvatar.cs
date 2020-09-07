@@ -15,6 +15,9 @@ namespace absurdjoy
             
             // Connect the local control components with the avatar components (and only for our local avatar, not the remote avatars);
             avatar.GetComponent<PlayerAvatar>().LinkWithLocal(localHeadReference, localLeftSkeleton, localRightSkeleton);
+
+            Debug.Log("Owned byClient: " + avatar.GetComponent<RealtimeView>().ownerID);
+            GameObject.Find("OVRCameraRig").GetComponent<LocalCalibrationHandler>().normcoreAvatar = avatar;
         }
     }
 }
